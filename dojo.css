@@ -1,0 +1,108 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body > * {
+    background-color: white;
+    border-width: 2px;
+    border-color: aquamarine;
+    color: aquamarine;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+
+/* BUTTON */
+[class="first"] {
+    border-style: solid;
+}
+
+[class="middle"] {
+    color: white;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    border-radius: 50%;
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+
+}
+
+[class="last"] {
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 1px;
+    background-color: blue;
+    box-shadow: 5px 5px 3px black;
+}
+
+
+/* ROW/COLUMNS */
+.row {
+    display: flex;
+}
+
+.col, .col-2, .col-3 {
+    background-color: rgb(29, 124, 119);
+    margin: 1%;
+    padding: 1%;
+    color: white;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.col-3 {
+    flex: 3;
+}
+
+
+/* NAVBAR  */
+.nav {
+    display: flex;
+    background-color: rgb(56, 54, 54);
+    border-color: aliceblue;
+    padding: 1%;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+    width: 50%;
+}
+
+.btn {
+    background-color: turquoise;
+    box-shadow: 2px 2px black;
+}
+
+.nav-title, .nav-links {
+    margin: 0%;
+}
+
+.active {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
